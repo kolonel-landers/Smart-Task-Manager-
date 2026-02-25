@@ -2,15 +2,27 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=, initial-scale=1.0">
-    <link rel="stylsheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Smart Task Manager</title>
 </head>
 <body>
+
     <h1>Smart Task Manager</h1>
-    <input type="text" id="taskInput"placeholder="Nouvelle tâche">
+
+    <input type="text" id="taskInput" placeholder="Nouvelle tâche">
     <button id="addBtn">Ajouter</button>
-    <ul id taskList></ul>
+
+    <br><br>
+
+    <button id="allBtn">Toutes</button>
+    <button id="completedBtn">Terminées</button>
+    <button id="activeBtn">Non terminées</button>
+    <button id="loadApiBtn">Charger les tâches depuis l'API</button>
+
+    <p id="loader"></p>
+
+    <ul id="taskList"></ul>
 
     <script src="script.js"></script>
 </body>
